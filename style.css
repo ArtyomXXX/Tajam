@@ -1,0 +1,753 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+.container {
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.header {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1000;
+
+   width: 100%;
+   padding-top: 20px;
+
+}
+
+.header-wrap {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo img {
+   max-width: 100%;
+   display: block;
+}
+
+/*Navigation////////////////////////////////////////////////////*/
+
+.nav {
+   margin-left: 50px;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+.nav-item {
+   display: inline-block;
+   margin: 0 10px;
+   color: #fff;
+   transition: color .2s linear;
+}
+
+.nav-item:hover {
+   color: #00FFFF;
+}
+
+.nav-item:after {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 2px;
+   background-color: #00ffff;
+   transition: opacity .2s linear;
+   opacity: 0;
+}
+
+.nav-item:hover:after {
+   opacity: 1;
+}
+
+.HomeSection {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover fixed;
+}
+
+.home-titles {
+   text-align: center;
+}
+
+.main-title {
+   margin-top: 20px;
+   font-size: 45px;
+   font-weight: 700;
+   line-height: 1;
+   color: #fff;
+
+}
+
+.main-title:after {
+   content: "";
+   display: block;
+   height: 2px;
+   width: 60px;
+   background-color: #00ffff;
+   margin: 28px auto 29px;
+}
+
+.subtitle {
+   color: #fff;
+   font-size: 17px;
+   opacity: 0.75;
+}
+
+.btn {
+   display: inline-block;
+   margin-top: 53px;
+   padding: 14px 0;
+   height: 38px;
+   width: 118px;
+   color: #fff;
+   font-size: 13px;
+   border: 1px solid #fff;
+   text-transform: uppercase;
+   transition: color .2s linear;
+}
+
+.btn:hover {
+   color: #00ffff;
+   border: 1px solid #00ffff;
+}
+
+
+/*Radio///////////////////////////////////////////////////////////*/
+
+.radio_container {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 1200px;
+
+   text-align: center;
+}
+
+.radio_inner {
+   display: flex;
+   justify-content: center;
+
+   padding: 15px 5px;
+   margin: 0px;
+}
+
+.radio {
+   position: relative;
+   top: 0;
+   left: 1.5px;
+   right: 0;
+}
+
+
+.radio_input {
+   -webkit-appearance: none;
+   appearance: none;
+   position: absolute;
+}
+
+.radio_label {
+   padding-left: 25px;
+   font-size: 1rem;
+   color: #444;
+   cursor: pointer;
+}
+
+.radio_label:before {
+   content: "";
+   display: block;
+   width: 16px;
+   height: 16px;
+
+   border: 1px solid #ccc;
+   background-color: #fff;
+   border-radius: 50%;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 1;
+
+   transition: linear, border .1s linear;
+}
+
+.radio_label:after {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+
+   background-color: #00ffff;
+   border-radius: 50%;
+   opacity: 0;
+
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   z-index: 2;
+}
+
+.radio_input:checked+.radio_label:before {
+   border-color: #00ffff;
+}
+
+.radio_input:checked+.radio_label:after {
+   opacity: 1;
+}
+
+/*/////////////////////About///////////////////*/
+
+.about-wrap {
+   display: flex;
+   justify-content: center;
+   padding: 71px 0;
+}
+
+.right_container {
+   width: 100%;
+   padding: 2px 100px 2px;
+}
+
+.about-title {
+   display: inline-block;
+   color: #423f4c;
+   font-size: 26px;
+   text-transform: uppercase;
+   margin-bottom: 28px;
+}
+
+.about-subtitle {
+   color: #aaa8ae;
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+
+.about_btn {
+   padding: 15px;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #423f4c;
+   border: 1px solid #423f4c;
+   transition: color .2s linear;
+}
+
+.about_btn:hover {
+   color: #00ffff;
+   border: 1px solid #00ffff;
+}
+
+
+.video_about {
+   width: 100%;
+   height: 550px;
+
+   display: flex;
+   background: #322d4c url("./Tajam-images/Main-images/Video.png") no-repeat center / cover;
+}
+
+
+/*//////////////////////////////////////////////////////Expertise*/
+
+.expertise_container {
+   margin: 60px 0;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.expertise_title {
+   text-align: center;
+}
+
+.expertise_title_top {
+   color: #423f4c;
+   text-transform: uppercase;
+   font-size: 26px;
+}
+
+.expertise__title_bottom {
+   color: #7a797d;
+   font-size: 20px;
+}
+
+.expertise_title:after {
+   margin: 30px auto;
+   content: "";
+   display: block;
+   height: 2px;
+   width: 60px;
+   background-color: #c6c5c9;
+}
+
+.expertise_blocks {
+   margin: 0 auto;
+   height: 100%;
+   width: 100%;
+}
+
+
+.top_block {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   height: 100%;
+   width: 100%;
+}
+
+/*
+.top_block {
+ margin: 30px auto;
+ content: "";
+ display: block;
+ height: 2px;
+  width: 60px;
+ background-color: #000;
+}
+*/
+
+
+.bottom_block {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   height: 100%;
+   width: 100%;
+
+}
+
+.first_item {
+   display: block;
+   margin: 15px;
+   padding: 15px;
+   width: 250px;
+   text-align: center;
+}
+
+.first_item_p1 {
+   text-transform: uppercase;
+   font-size: 14px;
+   color: #423f4c;
+}
+
+
+.first_item_p2 {
+   font-size: 13px;
+   color: #a4a4a4;
+}
+
+
+
+
+/*/////////////////////////////////////////////////Teams*/
+
+
+
+
+.Teams {
+   text-align: center;
+
+   height: 100%;
+   width: 100%;
+}
+
+.Teams>h1,
+h3 .team_title_top {
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 26px;
+   padding-top: 71px;
+}
+
+.team_title_bottom {
+   color: #fff;
+   padding-top: 30px;
+   font-size: 20px;
+}
+
+.team_title_bottom:after {
+   margin: 30px auto 69px;
+   content: "";
+   display: block;
+   height: 2px;
+   width: 60px;
+   background-color: #676080;
+}
+
+.team_blocks {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+   height: 100%;
+   width: 100%;
+}
+
+.team_block {
+   background-color: #fff;
+   height: 200px;
+   width: 100%;
+}
+
+.indent_team_block {
+   margin: 10px;
+}
+
+.border_team_block_p {
+   height: 77px;
+   width: 220px;
+   border: 1px solid #7a7a8c;
+}
+
+.team_block_p1 {
+   color: #fff;
+   font-size: 13px;
+}
+
+.team_block_p2 {
+   color: #b0b0bb;
+   font-size: 13px;
+}
+
+.team_p {
+   margin: 70px auto 29px;
+   color: #c9c8d0;
+}
+
+.team_btn {
+   display: inline-block;
+
+   margin: 15px auto;
+   padding: 15px 15px;
+
+   text-decoration: none;
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #fff;
+
+   border: 1px solid #fff;
+   transition: color .2s linear;
+}
+
+.team_btn:hover {
+   color: #00ffff;
+   border: 1px solid #00ffff;
+}
+
+
+/*//////////////////////////////Our works//////*/
+
+/*
+.our_works {
+ margin: 30px;
+ height: 100%;
+ width: 100%;
+}
+
+.our_works_h3 {
+   display: inline;
+   color: #413f4b;
+}
+
+.our_works_a {
+  display: inline;
+  color: #423f4c;
+  text-decoration: none;
+}
+*/
+
+/*/////////////////////////////////////Testimonials*/
+
+.testimonials {
+   display: flex;
+   justify-content: center;
+
+   height: 100%;
+   width: 100%;
+   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png") no-repeat center center fixed;
+   background-size: cover;
+}
+
+.testimonials_container {
+   margin-top: 69px;
+   margin-bottom: 69px;
+   width: 100%;
+   text-align: center;
+}
+
+
+.testimonials_title1 {
+   margin-top: 43px;
+
+   font-size: 18px;
+   line-height: 24px;
+   word-spacing: 6px;
+
+   color: #c0bec9;
+}
+
+.testimonials_title2 {
+   margin-top: 54px;
+   color: #fff;
+}
+
+.testimonials_title3 {
+   font-size: 15px;
+   color: #c0bec9;
+   margin-bottom: 45px;
+}
+
+.testimonials_nav {
+   width: 100%;
+}
+
+.testimonials_nav_link {
+   margin: 14px;
+}
+
+/*////////////////////////////////////////////Contact*/
+
+
+.contact {
+   margin: 71px 0 0 0;
+}
+
+.contact_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.contact_item {
+   margin: 10px;
+   padding: 1em;
+   font-size: 1.1em;
+   flex: 1;
+}
+
+.contact_header_inner {
+   color: #4e4c57;
+   text-transform: uppercase;
+}
+
+input {
+   margin: 10px;
+   padding: 1em;
+
+   width: 200px;
+
+   color: #4e4c57;
+   border-color: #b9b8bd;
+   outline-color: #00ffff;
+   border-width: thin;
+}
+
+textarea {
+   margin: 10px;
+   padding: 1em;
+
+   height: 199px;
+   width: 200px;
+
+   color: #4e4c57;
+   border-color: #b9b8bd;
+   outline-color: #00ffff;
+   resize: none;
+}
+
+.contact_Submit {
+   display: inline-block;
+   vertical-align: top;
+
+   margin: 10px;
+   padding: 13px 30px;
+
+   color: #423f4c;
+   font-size: 14px;
+   text-decoration: none;
+   text-transform: uppercase;
+
+   border: 1px solid #423f4c;
+   transition: color .2s linear;
+}
+
+.contact_Submit:hover {
+   color: #00ffff;
+   border-color: #00ffff;
+}
+
+/*///////////////////////////////////////////////Client*/
+.client_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.client_item {
+   width: 100px;
+   padding: 1em;
+   flex: 1;
+}
+
+.client_image {
+   margin: 45px 0 0 0;
+}
+
+.client_image img {
+   max-width: 100%;
+   display: block;
+}
+
+/*///////////////////////////////////////////////////Footer*/
+footer {
+   width: 100%;
+   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE\ footer.png") no-repeat center / cover;
+}
+
+.footer-wrap {
+   display: grid;
+   grid-gap: 63px;
+   grid-template-areas: "left center right";
+   align-items: baseline;
+}
+
+.footer-item {
+   /* grid-area: left center right; */
+   color: #fff;
+}
+
+:is(.footer-item, div)>p {
+   line-height: 1.8;
+}
+
+.footer-item>h3 {
+   margin-bottom: 29px;
+   text-transform: uppercase;
+}
+
+.footer-form {
+   display: flex;
+   align-items: center;
+}
+
+.footer-form>input {
+   color: #b1aebf;
+   background: transparent;
+   outline: none;
+}
+
+.footer-form>input::-webkit-input-placeholder {
+   color: #b1aebf;
+}
+
+.footer-form>button {
+   height: 45px;
+   width: 70px;
+   background: url(./Tajam-images/Social-media/Btn.png) no-repeat center;
+}
+
+.social-media {
+   margin: 27px 0 69px 0;
+}
+
+.social-media>a {
+   margin: 0 3px;
+}
+
+:is(.social-media, a)>img:hover {
+   border-radius: 100px;
+   background-color: #b1aebf;
+}
+
+.copyright {
+   text-align: right;
+}
+
+/*////////////////////////////////////////////////*/
+@media (min-width: 992px) {
+   .container {
+      max-width: 540px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container {
+      max-width: 720px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+      max-width: 960px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container {
+      max-width: 1140px;
+   }
+
+   footer {
+      padding: 100px 0;
+   }
+}
+
+
+@media screen and (max-height: 500px) {
+   .nav {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .nav {
+      display: none;
+   }
+
+   .main-title {
+      font-size: 40px;
+   }
+
+   .subtitle {
+      font-size: 15px;
+   }
+}
+
+@media screen and (max-width: 718px) {
+   .main-title {
+      font-size: 25px;
+   }
+
+   .subtitle {
+      font-size: 10px;
+   }
+}
