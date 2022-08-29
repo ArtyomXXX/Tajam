@@ -16,6 +16,10 @@ p {
    padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, nav, .btn {
+  text-transform: uppercase;
+}
+
 .text-center {
    text-align: center !important;
 }
@@ -38,14 +42,36 @@ a {
    padding: 0 15px;
 }
 
-.btn, .btn-dark {
-   display:  inline-block;
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.flex-column {
+   flex-direction: column;
+}
+
+.row::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+
+.column {
+   float: left;
+   width: 100%;
+   margin: 6px 10px 0 10px;
+   padding: 20px;
+}
+
+.btn,
+.btn-dark {
+   display: inline-block;
    padding: 15px 15px;
    font-size: 14px;
    font-weight: 700;
    color: #00ffff;
    border: 1px solid #00ffff;
-   text-transform: uppercase;
    transition: color .1s linear;
    cursor: pointer;
    user-select: none;
@@ -54,10 +80,13 @@ a {
    color: #fff;
    border: 1px solid #fff;
 }
-
 .btn-dark:hover {
-   color:#322d4c;
+   color: #322d4c;
    border-color: #322d4c;
+}
+
+.mr-45px {
+   margin-right: 45px;
 }
 
 /*..................header.................*/
@@ -67,7 +96,7 @@ a {
    right: 0;
    left: 0;
    z-index: 1000;
-   
+
    width: 100%;
    padding-top: 36px;
 
@@ -86,7 +115,7 @@ a {
 .nav {
    margin-left: 50px;
    font-size: 16px;
-   text-transform: uppercase;
+  
 }
 
 .nav-item {
@@ -121,20 +150,20 @@ a {
    justify-content: center;
    height: 100vh;
    width: 100%;
-   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover fixed;
+   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover;
 }
 
 .home-titles {
    margin: 20px 0 53px;
 }
 
-.home-titles > h1 {
+.home-titles>h1 {
    font-size: 45px;
    font-weight: 700;
-
+   text-transform: none;
 }
 
-.home-titles > h1:after {
+.home-titles>h1:after {
    content: "";
    display: block;
    height: 2px;
@@ -143,7 +172,7 @@ a {
    margin: 27px auto 30px;
 }
 
-.home-titles > p {
+.home-titles>p {
    font-size: 17px;
    opacity: 0.75;
 }
@@ -229,14 +258,7 @@ a {
    padding: 70px 0;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-}
-
-.L {
+.Logo {
    margin-right: 50px;
    height: 310px;
    width: 300px;
@@ -246,17 +268,23 @@ a {
    margin-left: 50px;
 }
 
-.content-about > h1 {
+.content-about>h1 {
    color: #423f4c;
    font-size: 26px;
-   text-transform: uppercase;
    margin-bottom: 28px;
 }
 
-.content-about > p {
+.content-about>p {
    color: #aaa8ae;
    font-size: 16px;
-  margin-bottom: 20px;
+   margin-bottom: 20px;
+}
+
+/*..............Video.....................*/
+.video-about {
+   height: 550px; 
+    width: 100%;
+   background: #322d4c url(./Tajam-images/Main-images/Video.png) no-repeat center / cover;
 }
 
 /*..............Expertise-Section.....................*/
@@ -266,27 +294,26 @@ a {
    padding: 71px 0 104px;
 }
 
-.expertise-title {
+.expertise-header {
    margin-bottom: 80px;
 }
 
-.expertise-title > h1 {
+.expertise-header>h1 {
    color: #423f4c;
-   text-transform: uppercase;
    font-size: 26px;
    letter-spacing: 1px;
    margin-bottom: 16px;
 }
 
-.expertise-title > h3 {
+.expertise-header>h3 {
    color: #7a797d;
    font-size: 20px;
    font-weight: 200;
    letter-spacing: 1px;
-   
+
 }
 
-.expertise-title:after {
+.expertise-header:after {
    margin: 21px auto 0;
    content: "";
    display: block;
@@ -295,37 +322,45 @@ a {
    background-color: #c6c5c9;
 }
 
-.expertise-blocks {
+.expertise-cards {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    align-items: baseline;
 }
 
-.expertise-block {
+.expertise-item {
    margin-bottom: 15px;
    width: 300px;
 }
 
+.expertise-item>img {
+   margin-bottom: 37px;
+}
+
 .expertise-p1 {
+   margin-bottom: 20px;
    color: #423f4b;
    font-weight: 600;
-   text-transform: uppercase;
-   margin-bottom: 20px;
 }
 
 .expertise-p2 {
    color: #a4a4a4;
 }
 
+.line {
+   margin: 39px 0;
+   width: 100%;
+   border-bottom: 1px solid #ebebeb;
+}
+
 /*..............Teams-Section.....................*/
 .Team-Section {
    padding: 71px 0 69px;
+   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE.png) no-repeat center / cover;
 }
 
 .Team-Section>h1 {
-   color: #fff;
-   text-transform: uppercase;
    font-size: 26px;
 }
 
@@ -355,7 +390,7 @@ a {
    width: 220px;
 }
 
-.card-content { 
+.card-content {
    margin: 0 auto;
    padding: 14px;
    width: 100%;
@@ -370,26 +405,21 @@ a {
 
 /*//////////////////////////////Our works//////*/
 .OurWorks-Section {
-     padding: 70px 0;
+   padding: 70px 0;
 }
 
-.works-title {
-   color: #00FFFF;
-}
-
-:is(.OurWorksSection, .works-title) > h1 {
-   color: #413f4b;
-}
-
-.OurWorks-img {
+.gallery {
    margin: 70px 0;
 }
 
+:is(.OurWorks-Section, .gallery) > img {}
+ 
 /*/////////////////////////////////////Testimonials*/
 .Testimonials-Section {
    padding: 69px 0;
    height: 100%;
    width: 100%;
+   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png) no-repeat center center / cover;
 }
 
 .testimonials-titles {
@@ -417,77 +447,43 @@ a {
    align-items: baseline;
 }
 
-.slide-item{
+.slide-item {
    margin: 14px;
 }
 
 /*////////////////////////////////////////////Contact*/
-
-
-.contact {
+.Contact-Section {
    padding: 71px 0;
 }
 
-.contact_container {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.contact_item {
-   margin: 10px;
-   padding: 1em;
-   font-size: 1.1em;
-   flex: 1;
-}
-
-.contact_header_inner {
-   color: #4e4c57;
-   text-transform: uppercase;
-}
-
-input {
-   margin: 10px;
-   padding: 1em;
-
-   width: 200px;
-
-   color: #4e4c57;
-   border-color: #b9b8bd;
-   outline-color: #00ffff;
-   border-width: thin;
-}
-
+input[type=text],
+[type=email],
 textarea {
-   margin: 10px;
-   padding: 1em;
-
-   height: 199px;
-   width: 200px;
-
-   color: #4e4c57;
-   border-color: #b9b8bd;
+   margin-bottom: 21px;
+   padding: 16px;
+   width: 100%;
+   border: 1px solid #e5e5e5;
    outline-color: #00ffff;
+}
+textarea {
+   height: 199px;
    resize: none;
+}
+input::placeholder, textarea::placeholder {
+   color: #b9b8bd;
+}
+input[type=submit] {
+   width: 118px;
+   background-color: white;
 }
 
 /*///////////////////////////////////////////////Client*/
-.client_container {
-   display: flex;
+.brand-container {
+     margin-top: 45px;
 }
 
-.client_item {
-   width: 100px;
-   padding: 1em;
-   flex: 1;
-}
-
-.client_image {
-   margin: 45px 0 0 0;
-}
-
-.client_image img {
-   max-width: 100%;
-   display: block;
+.brand {
+    margin-bottom: 45px;
 }
 
 /*///////////////////////////////////////////////////Footer*/
@@ -497,9 +493,9 @@ footer {
 }
 
 .footer-wrap {
-display: flex;
-justify-content: space-around;
-align-items: baseline;
+   display: flex;
+   justify-content: space-around;
+   align-items: baseline;
 }
 
 .footer-item {
@@ -512,7 +508,6 @@ align-items: baseline;
 
 .footer-item>h3 {
    margin-bottom: 29px;
-   text-transform: uppercase;
 }
 
 .footer-form {
@@ -551,92 +546,4 @@ align-items: baseline;
 
 .copyright {
    text-align: right;
-}
-/*////////////////////////container///////////////////////*/
-@media (min-width: 992px) {
-   .container {
-      max-width: 540px;
-   }
-}
-
-@media (min-width: 768px) {
-   .container {
-      max-width: 720px;
-   }
-}
-
-@media (min-width: 992px) {
-   .container {
-      max-width: 960px;
-   }
-}
-
-@media (min-width: 1200px) {
-   .container {
-      max-width: 1140px;
-   }
-
-   footer {
-      padding: 100px 0;
-   }
-}
-
-/*...........................................*/
-@media screen and (max-height: 500px) {
-
-   .logo,
-   .nav {
-      display: none;
-   }
-}
-
-@media screen and (max-width: 991px) {
-
-   .logo,
-   .nav {
-      display: none;
-   }
-
-   .home-titles > h1 {
-      font-size: 40px;
-   }
-
-   .home-titles > p {
-      font-size: 15px;
-   }
-
-   .row {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-   }
-}
-
-@media screen and (max-width: 718px) {
-   .home-titles > h1 {
-      font-size: 25px;
-   }
-
-   .home-titles > p {
-      padding: 0 105px;
-   }
-
-   .expertise-title > h1 {
-      font-size: 22px;
-   }
-
-   .expertise-title > h3 {
-      font-size: 14px;
-   }
-
-   .content-about {
-      margin: 0;
-      padding: 20px;
-   }
-
-   .L {
-      margin: 0;
-      height: 210px;
-      width: 200px;
-   }
 }

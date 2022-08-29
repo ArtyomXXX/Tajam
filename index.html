@@ -7,6 +7,7 @@
         content="width=device-width, height=device-height, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
     <title>Tajam</title>
 </head>
 
@@ -16,9 +17,7 @@
     <header class="header">
         <div class="container">
             <div class="header-wrap">
-
                 <img class="logo" src="./Tajam-images/Logo/Logo.png">
-
                 <nav class="nav">
                     <a class="nav-item" href="#">About</a>
                     <a class="nav-item" href="#">Expertise</a>
@@ -75,8 +74,8 @@
 
 
     <section class="Section-About">
-        <div class="row">
-          <div><img class="L" src="./Tajam-images/Logo/Left.png"></div>
+        <div class="container">
+            <div><img class="Logo" src="./Tajam-images/Logo/Left.png"></div>
             <div class="content-about">
                 <h1>Our Story</h1>
 
@@ -97,50 +96,51 @@
         </div>
     </section>
 
-    <div class="video_about"
-        style=" background: #322d4c url(./Tajam-images/Main-images/Video.png) no-repeat center / cover;  height: 550px;  width: 100%;">
-    </div>
+    <div class="video-about"></div>
 
-    <section class="Expertise-Section text-center">
-        <div class="container">
-            <div class="expertise-title">
+    <section class="Expertise-Section">
+        <div class="container text-center">
+            <div class="expertise-header">
                 <h1>Expertise</h1>
                 <h3>Lorem ipsun dolor sit amet proin gravida nibh vel velit</h3>
             </div>
-            <div class="expertise-blocks">
-                <div class="expertise-block">
+            <div class="expertise-cards">
+                <div class="expertise-item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-block">
+                <div class="expertise-item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE2.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-block">
+                <div class="expertise-item mb-0px">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE3.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-block">
+
+                <div class="line"></div>
+                
+                <div class="expertise-item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE4.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-block">
+                <div class="expertise-item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE5.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-block">
+                <div class="expertise-item mb-0px">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE6.png">
-                    <p class="expertise-p1">Web Design & Development</p>
+                    <h4 class="expertise-p1">Web Design & Development</h4>
                     <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
@@ -148,11 +148,10 @@
         </div>
     </section>
 
-    <section class="Team-Section text-center"
-        style="background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE.png) no-repeat center / cover ;">
+    <section class="Team-Section text-center">
         <h1>Meet our amazing team</h1>
         <h3>Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
-        <div class="prodile-cards">
+        <div class="employee-cards">
             <div class="card">
                 <img class="avatar">
                 <div class="card-content">
@@ -186,12 +185,12 @@
         <a class="btn" style="padding: 15px 20px;" href="#">We are Hiring </a>
     </section>
 
-    <section class="OurWorks-Section">
-        <div class="works-title">
+    <!-- <section class="OurWorks-Section">
+        <div class="flex">
             <h1 style="color: #413f4b;">Out works</h1>
-            <a href="#">See All Project in dribbble</a>
+            <a style=" color: #423f4c;" href="#">See All Project in dribbble</a>
         </div>
-        <div class="OurWorks-img text-center">
+        <div class="gallery text-center">
             <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
             <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
             <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
@@ -206,13 +205,11 @@
             <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
             <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
         </div>
-        <a class="btn-dark">Load More</a>
-    </section>
+        <a class="btn-dark" style="margin: 0 auto;">Load More</a>
+    </section> -->
 
 
-    <section class="Testimonials-Section"
-        style="background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png) no-repeat center center / cover fixed">
-
+    <section class="Testimonials-Section">
         <div class="text-center">
             <img src="./Tajam-images/Logo/“.png">
             <div class="testimonials-titles">
@@ -241,140 +238,120 @@
         </div>
     </section>
 
-    <!-- <section class="contact">
-        <div class="contact_container">
-
-            <div class="contact_item">
-                <div class="contact_header_inner">
-                    <h2>Give us a good news</h2>
+    <section class="Contact-Section">
+        <div class="container">
+            <div class="row flex">
+                <div class="column">
+                    <h2 style="color: #4e4c57; margin-bottom: 35px;">Give us a good news</h2>
+                    <form method="post" action="#">
+                        <input type="text" placeholder="Name" name="firstname">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="text" placeholder="Subject" name="subject">
+                        <textarea placeholder="Your Massage" name="massage"></textarea>
+                        <input type="Submit" value="Submit" class="btn-dark">
+                    </form>
                 </div>
 
-                <form method="post" action="#">
-                    <div class="group">
-                        <input type="text" placeholder="Name">
+                <div class="column">
+                    <h2 style="color: #4e4c57;">Our happy client</h2>
+                    <div class="brand-container flex">
+                        <div class="left mr-45px">
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Left-side/Zara_Logo.svg.png">
+                            </div>
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Left-side/1280px-Barneys_New_York_Logo.svg.png">
+                            </div>
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Left-side/Calvin_klein_logo.svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Left-side/Converse_logo.svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Left-side/1280px-Levi's_logo.svg.png">
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Right-side/Logo_of_Mango_(new).svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Right-side/1280px-Gucci_Logo.svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Right-side/1280px-Logo_NIKE.svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Right-side/Puma_Logo.svg.png">
+                            </div>
+
+                            <div class="brand">
+                                <img src="./Tajam-images/Client-images/Right-side/Billabong.svg.png">
+                            </div>
+                        </div>
+
                     </div>
+                </div>
 
-                    <div class="group">
-                        <input type="email" placeholder="Email">
-                    </div>
-
-                    <div class="group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-
-                    <div class="group">
-                        <textarea placeholder="Your Massage"></textarea>
-                    </div>
-
-                    <a href="#" class="btn-dark">Submit</a>
-
-                </form>
             </div>
-
-            <div class="contact_item">
-                <div class="contact_header_inner">
-                    <h2>Our happy client</h2>
-                </div>
-
-                <div class="client_container">
-                    <div class="client_item">
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Left-side/Zara_Logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Left-side/1280px-Barneys_New_York_Logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Left-side/Calvin_klein_logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Left-side/Converse_logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Left-side/1280px-Levi's_logo.svg.png">
-                        </div>
-                    </div>
-
-                    <div class="client_item">
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Right-side/Logo_of_Mango_(new).svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Right-side/1280px-Gucci_Logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Right-side/1280px-Logo_NIKE.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Right-side/Puma_Logo.svg.png">
-                        </div>
-
-                        <div class="client_image">
-                            <img src="./Tajam-images/Client-images/Right-side/Billabong.svg.png">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
-    </section> -->
+    </section>
 
     <!-- <footer>
-            <div class="container">
-                  <div class="footer-wrap">
-                        <div class="footer-item">
-                              <img style="margin-bottom: 29px;" src="./Tajam-images/Logo/Logo.png">
-                              <div>
-                                    <p>lorem quis bibendum auctor, nisi elit</p>
-                                    <p>consequat ipsum, nec sagittis sem nibh elit.</p>
-                                    <p>Duis sed odio sit amet auctor a orbare odio</p>
-                                    <p>non mauris vitae erat in elit</p>
-                              </div>
-                              <p style="margin-top: 32px;">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
-                                    &nbsp; &nbsp;PRIVACY</p>
-                        </div>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-item">
+                    <img style="margin-bottom: 29px;" src="./Tajam-images/Logo/Logo.png">
+                    <div>
+                        <p>lorem quis bibendum auctor, nisi elit</p>
+                        <p>consequat ipsum, nec sagittis sem nibh elit.</p>
+                        <p>Duis sed odio sit amet auctor a orbare odio</p>
+                        <p>non mauris vitae erat in elit</p>
+                    </div>
+                    <p style="margin-top: 32px;">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
+                        &nbsp; &nbsp;PRIVACY</p>
+                </div>
 
-                        <div class="footer-item">
-                              <h3>our studio</h3>
+                <div class="footer-item">
+                    <h3>our studio</h3>
 
-                              <div>
-                                    <p><img src="./Tajam-images/Social-media/big104.png">
-                                          &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
-                                    <p>No.12-13, Kalideres - Jakarta Barat</p>
-                                    <p>11480 - Indonesia</p>
-                              </div>
+                    <div>
+                        <p><img src="./Tajam-images/Social-media/big104.png">
+                            &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
+                        <p>No.12-13, Kalideres - Jakarta Barat</p>
+                        <p>11480 - Indonesia</p>
+                    </div>
 
-                              <p style="margin-top: 28px;"><img src="./Tajam-images/Social-media/phone351.png">
-                                    &nbsp; &nbsp;(+62) 21-2224 3333</p>
-                        </div>
+                    <p style="margin-top: 28px;"><img src="./Tajam-images/Social-media/phone351.png">
+                        &nbsp; &nbsp;(+62) 21-2224 3333</p>
+                </div>
 
-                        <div class="footer-item">
-                              <h3>stay in touch</h3>
-                              <form class="footer-form">
-                                    <input type="text" name="" placeholder="Subscribe our newsletter">
-                                    <button type="submit"></button>
-                              </form>
-                              <div class="social-media">
-                                    <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
-                                    <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
-                                    <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
-                                    <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
-                                    <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
-                                    <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
-                              </div>
-                              <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
-                        </div>
-                  </div>
+                <div class="footer-item">
+                    <h3>stay in touch</h3>
+                    <form class="footer-form">
+                        <input type="text" name="" placeholder="Subscribe our newsletter">
+                        <button type="submit"></button>
+                    </form>
+                    <div class="social-media">
+                        <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
+                    </div>
+                    <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
+                </div>
             </div>
-      </footer> -->
+        </div>
+    </footer> -->
 
 </body>
 

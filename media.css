@@ -1,0 +1,161 @@
+/*...................Container..............*/
+@media (min-width: 992px) {
+    .container {
+       max-width: 540px;
+    }
+ }
+ 
+ @media (min-width: 768px) {
+    .container {
+       max-width: 720px;
+    }
+ }
+ 
+ @media (min-width: 992px) {
+    .container {
+       max-width: 960px;
+    }
+ }
+ 
+ @media (min-width: 1200px) {
+    .container {
+       max-width: 1140px;
+    }
+ 
+    footer {
+       padding: 100px 0;
+    }
+ }
+ 
+ /*....................Height.......................*/
+ @media screen and (max-height: 500px) {
+ 
+    .logo,
+    .nav {
+       display: none;
+    }
+ }
+
+  /*....................Widht.......................*/
+ @media screen and (max-width: 991px) {
+ 
+    .logo,
+    .nav {
+       display: none;
+    }
+ 
+    .home-titles>h1 {
+       font-size: 40px;
+    }
+ 
+    .home-titles>p {
+       font-size: 15px;
+    }
+ 
+    .row {
+       display: flex;
+       flex-direction: column;
+    }
+ 
+    .content-about {
+       margin: 0;
+       padding: 20px;
+    }
+ 
+    .Logo {
+       margin: 0;
+    }
+ }
+ 
+ @media screen and (max-width: 718px) {
+    .home-titles>h1 {
+       font-size: 25px;
+    }
+ 
+    .home-titles>p {
+       padding: 0 105px;
+    }
+ 
+    .expertise-title>h1 {
+       font-size: 22px;
+    }
+ 
+    .expertise-title>h3 {
+       font-size: 14px;
+    }
+ 
+    .content-about {
+       margin: 0;
+       padding: 20px;
+    }
+ 
+    .Logo {
+       margin: 0;
+       height: 210px;
+       width: 200px;
+    }
+
+    .client-container {
+       margin: 0;
+       align-items: center;
+   }
+ }
+
+
+ @media screen and (max-width: 629px) {
+        .expertise-item {
+            margin-bottom: 39px;
+        }
+   
+        .mb-0px {
+            margin-bottom: 0;
+        }
+ }
+
+ @media screen and (max-width: 421px) {
+      .brand-container {
+         display: flex;
+         flex-wrap: wrap;
+      }
+ }
+
+ @media screen and (max-width: 600px) {
+   .column{
+       width: 100%;
+       margin: 0;
+   }
+  
+}
+
+
+
+
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Промежуточное разрешение */
+@media screen and (max-width: 650) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 480px) {
+
+}
