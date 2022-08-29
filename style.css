@@ -42,13 +42,18 @@ a {
    padding: 0 15px;
 }
 
-.flex {
+.position, .flex {
    display: flex;
    align-items: center;
 }
 
+.position, .justify-content {
+   justify-content: center;
+}
+
 .flex-column {
    flex-direction: column;
+
 }
 
 .row::after {

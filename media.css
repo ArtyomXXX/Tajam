@@ -95,9 +95,8 @@
        width: 200px;
     }
 
-    .client-container {
-       margin: 0;
-       align-items: center;
+   .position {
+      flex-direction: column;
    }
  }
 
