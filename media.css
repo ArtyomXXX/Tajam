@@ -22,14 +22,14 @@
        max-width: 1140px;
     }
  
-    footer {
+    .footer {
        padding: 100px 0;
     }
  }
  
  /*....................Height.......................*/
  @media screen and (max-height: 500px) {
- 
+
     .logo,
     .nav {
        display: none;
@@ -73,7 +73,7 @@
     }
  
     .home-titles>p {
-       padding: 0 105px;
+      
     }
  
     .expertise-title>h1 {
@@ -95,7 +95,7 @@
        width: 200px;
     }
 
-   .position {
+   .flex-position {
       flex-direction: column;
    }
  }
@@ -111,10 +111,42 @@
         }
  }
 
- @media screen and (max-width: 421px) {
+ @media screen and (max-width: 371px) {
       .brand-container {
          display: flex;
          flex-wrap: wrap;
+         justify-content: center;
+      }
+      
+      .brand {
+         max-width:min-content;
+      }
+
+      .btn {
+         padding: 10px 15px;
+      }
+
+      .left {
+         margin: 0;
+      }
+
+      .Logo {
+         margin: 0;
+         height: 100%;
+         width: 100%;
+      }
+
+      .avatar {
+         width: 100%;
+      }
+
+      .gallery > img {
+         height: 100%;
+         width: 100%;
+      }
+
+      .expertise-header>h1 {
+         font-size: 20px;
       }
  }
 
@@ -124,37 +156,4 @@
        margin: 0;
    }
   
-}
-
-
-
-
-/* Large desktops and laptops */
-@media screen and (min-width: 1200px) {
-
-}
-
-/* Portrait tablets and medium desktops */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Промежуточное разрешение */
-@media screen and (max-width: 650) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media screen and (max-width: 767px) {
-
-}
-
-/* Landscape phones and smaller */
-@media screen and (max-width: 480px) {
-
 }

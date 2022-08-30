@@ -11,8 +11,6 @@
     <title>Tajam</title>
 </head>
 
-
-
 <body>
     <header class="header">
         <div class="container">
@@ -43,7 +41,7 @@
             </div>
             <a class="btn">Learn More</a>
 
-            <!-- <div class="radio_container"> 
+    <!-- <div class="radio_container"> 
                                                  <div class="radio_inner">
 
                                                           <div class="radio">
@@ -68,13 +66,13 @@
                                                  </div>
                                      </div> -->
 
-        </div>
+    </div>
 
     </section>
 
 
     <section class="Section-About">
-        <div class="container position">
+        <div class="container flex flex-position">
             <div><img class="Logo" src="./Tajam-images/Logo/Left.png"></div>
             <div class="content-about">
                 <h1>Our Story</h1>
@@ -125,7 +123,7 @@
                 </div>
 
                 <div class="line"></div>
-                
+
                 <div class="expertise-item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE4.png">
                     <h4 class="expertise-p1">Web Design & Development</h4>
@@ -182,31 +180,33 @@
             </div>
         </div>
         <p>Become part of our deam team, let's join us !</p>
-        <a class="btn" style="padding: 15px 20px;" href="#">We are Hiring </a>
+        <a class="btn" href="#">We are Hiring </a>
     </section>
 
-    <!-- <section class="OurWorks-Section">
-        <div class="flex">
+    <section class="OurWorks-Section">
+        <div class="j-cont-around">
             <h1 style="color: #413f4b;">Out works</h1>
             <a style=" color: #423f4c;" href="#">See All Project in dribbble</a>
         </div>
-        <div class="gallery text-center">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
+        <div class="text-center">
+            <div class="gallery">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
 
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
-            <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
+                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
+            </div>
+            <a class="btn-dark">Load More</a>
         </div>
-        <a class="btn-dark" style="margin: 0 auto;">Load More</a>
-    </section> -->
+    </section>
 
 
     <section class="Testimonials-Section">
@@ -223,7 +223,9 @@
                 <p class="testimonials-p2">JANE GALADRIEL</p>
                 <p class="testimonials-p3">CEO TENGKUREP</p>
             </div>
-            <div class="slide">
+            <div class="slide flex-wrap j-cont-center">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
                 <a class="slide-item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile1.png"></a>
                 <a class="slide-item" href="#"><img
@@ -234,6 +236,8 @@
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile4.png"></a>
                 <a class="slide-item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile5.png"></a>
+
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </section>
@@ -304,51 +308,45 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-wrap">
-                <div class="footer-item">
-                    <img style="margin-bottom: 29px;" src="./Tajam-images/Logo/Logo.png">
-                    <div>
-                        <p>lorem quis bibendum auctor, nisi elit</p>
-                        <p>consequat ipsum, nec sagittis sem nibh elit.</p>
-                        <p>Duis sed odio sit amet auctor a orbare odio</p>
-                        <p>non mauris vitae erat in elit</p>
-                    </div>
-                    <p style="margin-top: 32px;">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
-                        &nbsp; &nbsp;PRIVACY</p>
+    <footer class="footer">
+        <div class="flex">
+            <div class="footer-item">
+                <img style="margin-bottom: 29px;" src="./Tajam-images/Logo/Logo.png">
+                <p>lorem quis bibendum auctor, nisi elit</p>
+                <p>consequat ipsum, nec sagittis sem nibh elit.</p>
+                <p>Duis sed odio sit amet auctor a orbare odio</p>
+                <p>non mauris vitae erat in elit</p>
+                <p style="margin-top: 32px;">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
+                    &nbsp; &nbsp;PRIVACY</p>
+            </div>
+
+            <div class="footer-item">
+                <h3>our studio</h3>
+
+                <p><img src="./Tajam-images/Social-media/big104.png">
+                    &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
+                <p>No.12-13, Kalideres - Jakarta Barat</p>
+                <p>11480 - Indonesia</p>
+
+                <p style="margin-top: 28px;"><img src="./Tajam-images/Social-media/phone351.png">
+                    &nbsp; &nbsp;(+62) 21-2224 3333</p>
+            </div>
+
+            <div class="footer-item">
+                <h3>stay in touch</h3>
+                <form class="footer-form">
+                    <input type="text" name="" placeholder="Subscribe our newsletter">
+                    <button type="submit"></button>
+                </form>
+                <div class="social-media">
+                    <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
+                    <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
+                    <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
+                    <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
+                    <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
+                    <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
                 </div>
-
-                <div class="footer-item">
-                    <h3>our studio</h3>
-
-                    <div>
-                        <p><img src="./Tajam-images/Social-media/big104.png">
-                            &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
-                        <p>No.12-13, Kalideres - Jakarta Barat</p>
-                        <p>11480 - Indonesia</p>
-                    </div>
-
-                    <p style="margin-top: 28px;"><img src="./Tajam-images/Social-media/phone351.png">
-                        &nbsp; &nbsp;(+62) 21-2224 3333</p>
-                </div>
-
-                <div class="footer-item">
-                    <h3>stay in touch</h3>
-                    <form class="footer-form">
-                        <input type="text" name="" placeholder="Subscribe our newsletter">
-                        <button type="submit"></button>
-                    </form>
-                    <div class="social-media">
-                        <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
-                        <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
-                        <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
-                        <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
-                        <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
-                        <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
-                    </div>
-                    <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
-                </div>
+                <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
             </div>
         </div>
     </footer>

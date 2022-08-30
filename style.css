@@ -1,6 +1,5 @@
 body {
    margin: 0;
-   padding: 0;
    color: #fff;
    font-size: 14px;
 }
@@ -13,15 +12,10 @@ h5,
 h6,
 p {
    margin: 0;
-   padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, nav, .btn {
   text-transform: uppercase;
-}
-
-.text-center {
-   text-align: center !important;
 }
 
 a {
@@ -42,20 +36,37 @@ a {
    padding: 0 15px;
 }
 
-.position, .flex {
+.text-center {
+   text-align: center !important;
+}
+
+.mr-45px {
+   margin-right: 45px;
+}
+
+/*.................Flex.......................*/
+.j-cont-around, .j-cont-center, .flex-wrap, .flex {
    display: flex;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+}
+
+.flex-wrap {
+   flex-wrap: wrap;
+   -ms-flex-wrap: wrap;
+}
+
+.j-cont-center {
+   justify-content: center;
    align-items: center;
 }
 
-.position, .justify-content {
-   justify-content: center;
+.j-cont-around {
+   justify-content: space-around;
+   align-items: center;
 }
 
-.flex-column {
-   flex-direction: column;
-
-}
-
+/*........................................*/
 .row::after {
    content: " ";
    display: table;
@@ -68,11 +79,11 @@ a {
    margin: 6px 10px 0 10px;
    padding: 20px;
 }
-
+/*........................................*/
 .btn,
 .btn-dark {
    display: inline-block;
-   padding: 15px 15px;
+   padding: 15px 30px;
    font-size: 14px;
    font-weight: 700;
    color: #00ffff;
@@ -88,10 +99,6 @@ a {
 .btn-dark:hover {
    color: #322d4c;
    border-color: #322d4c;
-}
-
-.mr-45px {
-   margin-right: 45px;
 }
 
 /*..................header.................*/
@@ -153,6 +160,7 @@ a {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
    height: 100vh;
    width: 100%;
    background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover;
@@ -260,6 +268,7 @@ a {
 
 /*..............Section-About.....................*/
 .Section-About {
+ 
    padding: 70px 0;
 }
 
@@ -398,7 +407,6 @@ a {
 .card-content {
    margin: 0 auto;
    padding: 14px;
-   width: 100%;
    border: 1px solid #7a7a8c;
 }
 
@@ -417,8 +425,11 @@ a {
    margin: 70px 0;
 }
 
-:is(.OurWorks-Section, .gallery) > img {}
- 
+.gallery > img{
+   height: 200px;
+   width: 267px;
+}
+
 /*/////////////////////////////////////Testimonials*/
 .Testimonials-Section {
    padding: 69px 0;
@@ -445,15 +456,14 @@ a {
    color: #c0bec9;
 }
 
-.slide {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   align-items: baseline;
-}
-
 .slide-item {
    margin: 14px;
+}
+
+.prev, .next {
+   width: 37px;
+   font-size: 25px;
+   font-weight: 100;
 }
 
 /*////////////////////////////////////////////Contact*/
@@ -478,8 +488,7 @@ input::placeholder, textarea::placeholder {
    color: #b9b8bd;
 }
 input[type=submit] {
-   width: 118px;
-   background-color: white;
+   background: transparent;
 }
 
 /*///////////////////////////////////////////////Client*/
@@ -492,19 +501,17 @@ input[type=submit] {
 }
 
 /*///////////////////////////////////////////////////Footer*/
-footer {
-   width: 100%;
+.footer {
    background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE\ footer.png") no-repeat center / cover;
 }
 
 .footer-wrap {
-   display: flex;
-   justify-content: space-around;
-   align-items: baseline;
+   
 }
 
 .footer-item {
-   color: #fff;
+   margin: 6px 10px 0 10px;
+   padding: 20px;
 }
 
 :is(.footer-item, div)>p {
@@ -516,8 +523,7 @@ footer {
 }
 
 .footer-form {
-   display: flex;
-   align-items: center;
+
 }
 
 .footer-form>input {
@@ -526,7 +532,7 @@ footer {
    outline: none;
 }
 
-.footer-form>input::-webkit-input-placeholder {
+.footer-form>input::placeholder {
    color: #b1aebf;
 }
 
