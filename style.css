@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6,
-p {
+p  {
    margin: 0;
 }
 
@@ -32,6 +32,7 @@ a {
 
 .container {
    width: 100%;
+   max-width: 1200px;
    margin: 0 auto;
    padding: 0 15px;
 }
@@ -40,53 +41,16 @@ a {
    text-align: center !important;
 }
 
-.mr-45px {
-   margin-right: 45px;
-}
-
-/*.................Flex.......................*/
-.j-cont-around, .j-cont-center, .flex-wrap, .flex {
-   display: flex;
-   display: -ms-flexbox;
-   display: -webkit-flex;
-}
-
-.flex-wrap {
-   flex-wrap: wrap;
-   -ms-flex-wrap: wrap;
-}
-
-.j-cont-center {
-   justify-content: center;
-   align-items: center;
-}
-
-.j-cont-around {
-   justify-content: space-around;
-   align-items: center;
-}
-
-/*........................................*/
-.row::after {
-   content: " ";
-   display: table;
-   clear: both;
-}
-
-.column {
-   float: left;
-   width: 100%;
-   margin: 6px 10px 0 10px;
-   padding: 20px;
-}
-/*........................................*/
+/*....................Button....................*/
 .btn,
 .btn-dark {
    display: inline-block;
-   padding: 15px 30px;
-   font-size: 14px;
+   vertical-align: top;
+   padding: 12px 18px;
+   font-size: 16px;
    font-weight: 700;
    color: #00ffff;
+   border-radius: 2px;
    border: 1px solid #00ffff;
    transition: color .1s linear;
    cursor: pointer;
@@ -101,7 +65,7 @@ a {
    border-color: #322d4c;
 }
 
-/*..................header.................*/
+/*..................Header.................*/
 .header {
    position: absolute;
    top: 0;
@@ -110,97 +74,78 @@ a {
    z-index: 1000;
 
    width: 100%;
-   padding-top: 36px;
-
+   padding-top: 35px;
 }
 
-.header-wrap {
+.header_inner {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.logo {
-   display: block;
-}
-
-.nav {
-   margin-left: 50px;
-   font-size: 16px;
-  
-}
-
-.nav-item {
+.menu, .nav_link {
    display: inline-block;
-   margin: 0 10px;
+   position: relative;
+   margin: 0 14px;
    color: #fff;
-   transition: color .2s linear;
+   font-size: 13px;
+   font-weight: 900;
+   transition: color .1s linear;
 }
 
-.nav-item:hover {
+.active,.nav_link:hover {
    color: #00FFFF;
 }
 
-.nav-item:after {
-   content: "";
-   display: block;
-   width: 100%;
-   height: 2px;
-   background-color: #00ffff;
-   transition: opacity .2s linear;
-   opacity: 0;
+.menu {
+   display: none;
+   font-size: 30px;
 }
 
-.nav-item:hover:after {
-   opacity: 1;
-}
-
-/*..................HomeSection.................*/
-.HomeSection {
+/*..................Home Section.................*/
+.home {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   height: 100%;
    width: 100%;
    background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover;
 }
 
-.home-titles {
-   margin: 20px 0 53px;
+.home_inner {
+   margin: 185px auto 53px;
+   width: 100%;
+   max-width: 880px;
 }
 
-.home-titles>h1 {
-   font-size: 45px;
+.home_title {
+   font-size: 32px;
    font-weight: 700;
    text-transform: none;
 }
 
-.home-titles>h1:after {
+.home_title:after {
    content: "";
    display: block;
-   height: 2px;
-   width: 60px;
+   height: 3px;
+   width: 52px;
    background-color: #00ffff;
-   margin: 27px auto 30px;
+   margin: 26px auto 29px;
 }
 
-.home-titles>p {
-   font-size: 17px;
-   opacity: 0.75;
+.home_text {
+   line-height: 1.8;
 }
 
-/*..............  Radio.....................*/
+/*...................Radio.....................*/
 .radio_container {
-   margin: 0 auto;
-   width: 100%;
-   max-width: 1200px;
+    margin: 127px 0 70px;
 }
 
 .radio_inner {
    display: flex;
    justify-content: center;
-
    padding: 15px 5px;
    margin: 0px;
 }
@@ -219,17 +164,17 @@ a {
 }
 
 .radio_label {
-   padding-left: 25px;
-   font-size: 1rem;
    color: #444;
+   font-size: 1rem;
    cursor: pointer;
+   padding-left: 25px;
 }
 
 .radio_label:before {
    content: "";
    display: block;
-   width: 16px;
-   height: 16px;
+   width: 15px;
+   height: 15px;
    border: 1px solid #ccc;
    background-color: #fff;
    border-radius: 50%;
@@ -266,68 +211,68 @@ a {
    opacity: 1;
 }
 
-/*..............Section-About.....................*/
-.Section-About {
- 
+/*.....................About Section...................*/
+.about {
    padding: 70px 0;
 }
 
-.Logo {
-   margin-right: 50px;
-   height: 310px;
-   width: 300px;
+.about_inner {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
-.content-about {
-   margin-left: 50px;
+.about_logo {
+   height: 233px;
+   width: 235px;
+   margin: 20px 100px 20px 20px;
 }
 
-.content-about>h1 {
+.about_title {
    color: #423f4c;
-   font-size: 26px;
+   font-size: 22px;
    margin-bottom: 28px;
 }
 
-.content-about>p {
+.about_text {
    color: #aaa8ae;
-   font-size: 16px;
-   margin-bottom: 20px;
+   line-height: 1.8;
+   margin-bottom: 34px;
 }
 
 /*..............Video.....................*/
 .video-about {
    height: 550px; 
-    width: 100%;
+   width: 100%;
    background: #322d4c url(./Tajam-images/Main-images/Video.png) no-repeat center / cover;
 }
 
-/*..............Expertise-Section.....................*/
-.Expertise-Section {
+/*..............Expertise Section.....................*/
+.expertise {
    height: 100%;
    width: 100%;
    padding: 71px 0 104px;
 }
 
-.expertise-header {
+.expertise_header {
    margin-bottom: 80px;
 }
 
-.expertise-header>h1 {
+.expertise_title {
    color: #423f4c;
-   font-size: 26px;
+   font-size: 22px;
    letter-spacing: 1px;
    margin-bottom: 16px;
 }
 
-.expertise-header>h3 {
+.expertise_suptitle {
    color: #7a797d;
-   font-size: 20px;
    font-weight: 200;
    letter-spacing: 1px;
-
+    text-transform: none;
 }
 
-.expertise-header:after {
+.expertise_suptitle:after {
    margin: 21px auto 0;
    content: "";
    display: block;
@@ -336,30 +281,32 @@ a {
    background-color: #c6c5c9;
 }
 
-.expertise-cards {
+.expertise_blocks {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
    align-items: baseline;
 }
 
-.expertise-item {
+.expertise_item {
    margin-bottom: 15px;
-   width: 300px;
+   height: 205px;
+   width: 268px;
 }
 
-.expertise-item>img {
+.expertise_item>img {
    margin-bottom: 37px;
 }
 
-.expertise-p1 {
-   margin-bottom: 20px;
+.expertise_text1 {
+   margin-bottom: 19px;
    color: #423f4b;
    font-weight: 600;
 }
 
-.expertise-p2 {
+.expertise_text2 {
    color: #a4a4a4;
+   line-height: 1.8;
 }
 
 .line {
@@ -368,26 +315,26 @@ a {
    border-bottom: 1px solid #ebebeb;
 }
 
-/*..............Teams-Section.....................*/
-.Team-Section {
+/*.....................Team Section.....................*/
+.team {
    padding: 71px 0 69px;
    background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE.png) no-repeat center / cover;
 }
 
-.Team-Section>h1 {
-   font-size: 26px;
+.team_title {
+   font-size: 22px;
+   margin-bottom: 15px;
 }
 
-.Team-Section>h3 {
-   color: #fff;
-   font-size: 20px;
-   margin-top: 30px;
+.team_suptitle {
+   color: #aeabbb;
+   text-transform: none;
 }
 
-.Team-Section>h3:after {
+.team_suptitle:after {
+   content: "";
    display: block;
    margin: 21px auto 47px;
-   content: "";
    height: 2px;
    width: 60px;
    background-color: #676080;
@@ -396,6 +343,7 @@ a {
 .card {
    margin: 10px;
    display: inline-block;
+   position: relative;
 }
 
 .avatar {
@@ -404,60 +352,89 @@ a {
    width: 220px;
 }
 
-.card-content {
+.card_texts {
    margin: 0 auto;
    padding: 14px;
+   line-height: 1.8;
    border: 1px solid #7a7a8c;
 }
 
-.Team-Section>p {
+.card_text2 {
+   font-size: 13px;
+   color: #b4b2c0;
+}
+
+.team_text {
    color: #c9c8d0;
-   font-size: 18px;
    margin: 69px 0 35px;
 }
 
-/*//////////////////////////////Our works//////*/
-.OurWorks-Section {
+/*.....................Our works Section.....................*/
+.OurWorks {
    padding: 70px 0;
 }
 
-.gallery {
-   margin: 70px 0;
+.OurWorks_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
 }
 
-.gallery > img{
+.OurWorks_title {
+   color: #413f4b;
+   font-size: 22px;
+}
+
+.OurWorks_link {
+   color: #423f4c;
+}
+
+.OurWorks_gallery {
+   margin: 70px 0;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.gallery_item {
+   display: block;
    height: 200px;
    width: 267px;
+   position: relative;
 }
 
-/*/////////////////////////////////////Testimonials*/
-.Testimonials-Section {
+/*.....................Testimonials Section.....................*/
+.testimonials {
    padding: 69px 0;
    height: 100%;
    width: 100%;
    background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png) no-repeat center center / cover;
 }
 
-.testimonials-titles {
+.testimonials_texts {
    margin: 44px 0 45px;
 }
 
-.testimonials-p1 {
+.testimonials_text1 {
+   line-height: 1.8;
    font-size: 18px;
    color: #c0bec9;
 }
 
-.testimonials-p2 {
-   margin: 55px 0 10px;
+.testimonials_text2 {
+   margin: 55px 0 13px;
 }
 
-.testimonials-p3 {
+.testimonials_text3 {
    font-size: 15px;
    color: #c0bec9;
 }
 
-.slide-item {
-   margin: 14px;
+.slider_item {
+   margin: 0 14px;
 }
 
 .prev, .next {
@@ -466,9 +443,27 @@ a {
    font-weight: 100;
 }
 
-/*////////////////////////////////////////////Contact*/
-.Contact-Section {
+/*.....................Contact Section.....................*/
+.contact {
    padding: 71px 0;
+}
+
+.contact_inner {
+     display: flex;
+     justify-content: center;
+}
+
+.column_form, .column_brand {
+   float: left;
+   width: 100%;
+   margin: 6px 10px 0 10px;
+   padding: 30px; 
+} 
+
+.form_title, .brand_title {
+   margin-bottom: 45px;
+   color: #4e4c57; 
+   font-size: 22px;
 }
 
 input[type=text],
@@ -491,66 +486,77 @@ input[type=submit] {
    background: transparent;
 }
 
-/*///////////////////////////////////////////////Client*/
-.brand-container {
-     margin-top: 45px;
+.brands {
+     display: flex;
+}
+
+.left_brands_col {
+   margin-right: 80px;
 }
 
 .brand {
     margin-bottom: 45px;
+    position: relative;
+    flex: 1 1 0;
 }
 
-/*///////////////////////////////////////////////////Footer*/
+/*.....................Footer Section.....................*/
 .footer {
+   padding: 90px 0 72px;
    background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE\ footer.png") no-repeat center / cover;
 }
 
-.footer-wrap {
-   
+.footer_inner {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: baseline;
 }
 
-.footer-item {
+.footer_item {
+   position: relative;
    margin: 6px 10px 0 10px;
-   padding: 20px;
+   width: 320px;
 }
 
-:is(.footer-item, div)>p {
+.footer_item>p {
    line-height: 1.8;
 }
 
-.footer-item>h3 {
-   margin-bottom: 29px;
+.footer_item>h3, .footer_logo {
+   margin-bottom: 39px;
+   font-size: 15;
 }
 
-.footer-form {
-
+.footer_form {
+   display: flex;
 }
 
-.footer-form>input {
+.footer_form>input[type=text] {
+   height: 43px;
+   width: 209px;
    color: #b1aebf;
-   background: transparent;
    outline: none;
+   background: transparent;
 }
 
-.footer-form>input::placeholder {
+.footer_form>input::placeholder {
    color: #b1aebf;
 }
 
-.footer-form>button {
-   height: 45px;
+.footer_form>input[type=submit] {
+   margin-left: 10px;
+   height: 43px;
    width: 70px;
-   background: url(./Tajam-images/Social-media/Btn.png) no-repeat center;
+  
+   background: url(./Tajam-images/Social-media/Btn.png) no-repeat center / cover;
 }
 
-.social-media {
-   margin: 27px 0 69px 0;
-}
-
-.social-media>a {
+.social_media>a {
    margin: 0 3px;
 }
 
-:is(.social-media, a)>img:hover {
+:is(.social_media, a)>img:hover {
    border-radius: 100px;
    background-color: #b1aebf;
 }
@@ -558,3 +564,136 @@ input[type=submit] {
 .copyright {
    text-align: right;
 }
+
+.phone {
+   margin-top: 24px;
+}
+
+.help, .copyright {
+   margin-top: 82px;
+}
+
+
+
+@media (max-width: 1230px){
+   
+}
+
+@media (max-width: 1024px) {
+   
+}
+
+@media  (max-width: 912px) {
+
+}
+
+@media (max-width: 880px){
+   .header {
+      background-color: #000;
+   }
+   .nav_link {
+       display: none;
+   }
+   .menu {
+      display: block;
+   }
+   .about_logo {
+      margin: auto;
+   }
+
+   .contact_inner {
+      flex-wrap: wrap;
+   }
+
+   .column_brand {
+      width: 50%;
+   }
+
+   .brand > img {
+      height: auto;
+      width: 100%;
+   }
+}
+
+@media  (max-width: 768px) {
+
+}
+
+@media  (max-width: 728px) {
+   .about_logo {
+      height: 192px;
+      width: 192px;
+   } 
+}
+
+@media  (max-width: 685px) {
+   .about_logo {
+      margin-bottom: 30px;
+   } 
+}
+
+@media  (max-width: 540px) {
+
+}
+
+@media  (max-width: 412px) {
+   .home_title {
+      font-size: 23px;
+   }
+
+   .home_text {
+      font-size: 8px;
+   }
+
+   .about_logo {
+       height: 192px;
+       width: 192px;
+   }
+   .expertise_header {
+      padding: 20px;
+   }
+
+   .OurWorks_header {
+      padding: 0 20px;
+   }
+
+   .testimonials_text1 {
+      font-size: 9px;
+   }
+}
+
+@media (max-width: 321px) {
+
+}
+
+@media (max-width: 280px) {
+   .header_logo {
+      width: 90px;
+    }
+
+    .home_title {
+      font-size: 
+    }
+
+   .form_title, .brand_title {
+      font-size: 14px;
+      margin-bottom: 40px
+   }
+
+   .brand {
+      margin-bottom: 38px;
+  }
+ 
+   .left_brands_col {
+      margin-right: 45px;
+   }
+}
+
+
+@media screen and (max-width: 600px) {
+   .column_form, .column_brand{
+       width: 100%;
+       margin: 0;
+   }
+  
+} 

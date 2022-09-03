@@ -1,5 +1,5 @@
 /*...................Container..............*/
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .container {
        max-width: 540px;
     }
@@ -25,19 +25,19 @@
     .footer {
        padding: 100px 0;
     }
- }
+ } */
  
  /*....................Height.......................*/
- @media screen and (max-height: 500px) {
+ /* @media screen and (max-height: 500px) {
 
     .logo,
     .nav {
        display: none;
     }
- }
+ } */
 
   /*....................Widht.......................*/
- @media screen and (max-width: 991px) {
+ /* @media screen and (max-width: 991px) {
  
     .logo,
     .nav {
@@ -149,11 +149,4 @@
          font-size: 20px;
       }
  }
-
- @media screen and (max-width: 600px) {
-   .column{
-       width: 100%;
-       margin: 0;
-   }
-  
-}
+ */

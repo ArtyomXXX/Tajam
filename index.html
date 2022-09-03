@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-        content="width=device-width, height=device-height, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
@@ -14,25 +13,27 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-wrap">
-                <img class="logo" src="./Tajam-images/Logo/Logo.png">
-                <nav class="nav">
-                    <a class="nav-item" href="#">About</a>
-                    <a class="nav-item" href="#">Expertise</a>
-                    <a class="nav-item" href="#">Teams</a>
-                    <a class="nav-item" href="#">Works</a>
-                    <a class="nav-item" href="#">People say</a>
-                    <a class="nav-item" href="#">Contact</a>
+            <div class="header_inner">
+                <img class="header_logo" src="./Tajam-images/Logo/Logo.png">
+                <nav class="nav id=myDIV">
+                    <a class="nav_link active" href="#">Home</a>
+                    <a class="nav_link" href="#">About</a>
+                    <a class="nav_link" href="#">Expertise</a>
+                    <a class="nav_link" href="#">Teams</a>
+                    <a class="nav_link" href="#">Works</a>
+                    <a class="nav_link" href="#">People say</a>
+                    <a class="nav_link" href="#">Contact</a>
+                    <a class="menu nav_link" href="#">&#9776;</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="HomeSection">
+    <section class="home">
         <div class="container text-center">
-            <div class="home-titles">
-                <h1>We Are Awesome Creative Agency</h1>
-                <p>
+            <div class="home_inner">
+                <h1 class="home_title">We Are Awesome Creative Agency</h1>
+                <p class="home_text">
                     This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
                     Aenean sollicitudin, lorem <br> quis bibendum auctor, nisi elit consequat ipsum, nec
                     sagittis sem nibh id elit. Duis sed odio sit amet nibh <br>
@@ -41,200 +42,207 @@
             </div>
             <a class="btn">Learn More</a>
 
-    <!-- <div class="radio_container"> 
-                                                 <div class="radio_inner">
+            <div class="radio_container">
+                <div class="radio_inner">
 
-                                                          <div class="radio">
-                                                                <input class="radio_input" name="switches" type="radio" id="radio_1">
-                                                                <label class="radio_label" for="radio_1"></label>
-                                                          </div>
+                    <div class="radio">
+                        <input class="radio_input" name="switches" type="radio" id="radio_1">
+                        <label class="radio_label" for="radio_1"></label>
+                    </div>
 
-                                                          <div class="radio">
-                                                                <input class="radio_input" name="switches" type="radio" id="radio_2">
-                                                                <label class="radio_label" for="radio_2"></label>
-                                                          </div>
+                    <div class="radio">
+                        <input class="radio_input" name="switches" type="radio" id="radio_2">
+                        <label class="radio_label" for="radio_2"></label>
+                    </div>
 
-                                                          <div class="radio">
-                                                                <input class="radio_input" name="switches" type="radio" id="radio_3">
-                                                                <label class="radio_label" for="radio_3"></label>
-                                                          </div>
+                    <div class="radio">
+                        <input class="radio_input" name="switches" type="radio" id="radio_3">
+                        <label class="radio_label" for="radio_3"></label>
+                    </div>
 
-                                                          <div class="radio">
-                                                                <input class="radio_input" name="switches" type="radio" id="radio_4">
-                                                                <label class="radio_label" for="radio_4"></label>
-                                                          </div>
-                                                 </div>
-                                     </div> -->
+                    <div class="radio">
+                        <input class="radio_input" name="switches" type="radio" id="radio_4">
+                        <label class="radio_label" for="radio_4"></label>
+                    </div>
+                </div>
+            </div>
 
-    </div>
+        </div>
 
     </section>
 
 
-    <section class="Section-About">
-        <div class="container flex flex-position">
-            <div><img class="Logo" src="./Tajam-images/Logo/Left.png"></div>
-            <div class="content-about">
-                <h1>Our Story</h1>
+    <section class="about">
+        <div class="container">
+            <div class="about_inner">
+                <img class="about_logo" src="./Tajam-images/Logo/Left.png">
+                <div class="about_content">
+                    <h1 class="about_title">Our Story</h1>
 
-                <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                    vel velit auctor <br> aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                    ipsum
-                    <br>
-                    nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                    <p class="about_text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                        vel velit auctor <br> aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+                        nisi elit consequat ipsum <br> nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                        vulputate cursus
+                        <br>
+                        <br>
+                        Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                        auctor a ornare odio.<br>
+                        Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu<br>
+                        ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
 
-                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
-                    auctor a ornare odio.<br>
-                    Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti
-                    sociosqu<br>
-                    ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-                <a class="btn-dark" href="#">Learn More</a>
+                    <a class="btn btn-dark" href="#">Learn More</a>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="video-about"></div>
 
-    <section class="Expertise-Section">
+    <section class="expertise">
         <div class="container text-center">
-            <div class="expertise-header">
-                <h1>Expertise</h1>
-                <h3>Lorem ipsun dolor sit amet proin gravida nibh vel velit</h3>
+            <div class="expertise_header">
+                <h1 class="expertise_title">Expertise</h1>
+                <h3 class="expertise_suptitle">Lorem ipsun dolor sit amet proin gravida nibh vel velit</h3>
             </div>
-            <div class="expertise-cards">
-                <div class="expertise-item">
+            <div class="expertise_blocks">
+                <div class="expertise_item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Web Design & Development</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-item">
+                <div class="expertise_item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE2.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Branding Identity</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-item mb-0px">
+                <div class="expertise_item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE3.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Mobile App</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
 
                 <div class="line"></div>
 
-                <div class="expertise-item">
+                <div class="expertise_item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE4.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Search engine optimization</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-item">
+                <div class="expertise_item">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE5.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Game Development</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
-                <div class="expertise-item mb-0px">
+                <div class="expertise_item mb-0px">
                     <img src="./Tajam-images/Expertise-images/PUT YOUR ICON HERE6.png">
-                    <h4 class="expertise-p1">Web Design & Development</h4>
-                    <p class="expertise-p2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
+                    <h5 class="expertise_text1">Made with love</h5>
+                    <p class="expertise_text2">This is Photoshop's version of Lorem <br> Ipsum Proin gravida
                         nibh vel velit <br> auctor aliquet Aenean</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="Team-Section text-center">
-        <h1>Meet our amazing team</h1>
-        <h3>Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
-        <div class="employee-cards">
-            <div class="card">
-                <img class="avatar">
-                <div class="card-content">
-                    <p class="card-p1">SEMF UCUK</p>
-                    <p class="card-p2">CEO & FOUNDER</p>
+    <section class="team">
+        <div class="container text-center">
+            <h1 class="team_title">Meet our amazing team</h1>
+            <h3 class="team_suptitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</h3>
+            <div class="employee_cards">
+                <div class="card">
+                    <img class="avatar">
+                    <div class="card_texts">
+                        <p class="card_text1">SEMF &nbsp;UCUK</p>
+                        <p class="card_text2">CEO & FOUNDER</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="avatar">
+                    <div class="card_texts">
+                        <p class="card_text1">DIK &nbsp;ADALIN</p>
+                        <p class="card_text2">ENGINEERING</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="avatar">
+                    <div class="card_texts">
+                        <p class="card_text1">JENG &nbsp;KOL</p>
+                        <p class="card_text2">DESIGNER</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="avatar">
+                    <div class="card_texts">
+                        <p class="card_text1">PET &nbsp;ROMAK</p>
+                        <p class="card_text2">MARKETING</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img class="avatar">
-                <div class="card-content">
-                    <p class="card-p1">DIK ADALIN</p>
-                    <p class="card-p2">ENGINEERING</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="avatar">
-                <div class="card-content">
-                    <p class="card-p1">JENG KOL</p>
-                    <p class="card-p2">DESIGNER</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="avatar">
-                <div class="card-content">
-                    <p class="card-p1">PET ROMAK</p>
-                    <p class="card-p2">MARKETING</p>
-                </div>
-            </div>
-        </div>
-        <p>Become part of our deam team, let's join us !</p>
-        <a class="btn" href="#">We are Hiring </a>
-    </section>
-
-    <section class="OurWorks-Section">
-        <div class="j-cont-around">
-            <h1 style="color: #413f4b;">Out works</h1>
-            <a style=" color: #423f4c;" href="#">See All Project in dribbble</a>
-        </div>
-        <div class="text-center">
-            <div class="gallery">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
-
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
-                <img src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
-            </div>
-            <a class="btn-dark">Load More</a>
+            <p class="team_text">Become part of our deam team, let's join us !</p>
+            <a class="btn" href="#">We are Hiring </a>
         </div>
     </section>
 
-
-    <section class="Testimonials-Section">
+    <section class="OurWorks">
         <div class="text-center">
+            <div class="OurWorks_header">
+                <h1 class="OurWorks_title">Our works</h1>
+                <a class="OurWorks_link" href="#">See All Project in dribbble &#10095;</a>
+            </div>
+
+            <div class="OurWorks_gallery">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
+
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE1.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE2.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE3.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE4.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE6.png">
+                <img class="gallery_item" src="./Tajam-images/Works/PUT YOUR IMAGE HERE5.png">
+            </div>
+
+            <a class="btn btn-dark">Load More</a>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <div class="container text-center">
             <img src="./Tajam-images/Logo/“.png">
-            <div class="testimonials-titles">
-                <p class="testimonials-p1 ">This is Photoshop's version of Lorem Ipsum.
+            <div class="testimonials_texts">
+                
+                <p class="testimonials_text1">This is Photoshop's version of Lorem Ipsum.
                     Proin gravida nibh vel velit auctor aliquet. Aenean <br> sollicitudin, lorem quis bibendum
                     auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis <br>
                     sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
                     Nam nec tellus <br> a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat
                     auctor eu in elit.</p>
 
-                <p class="testimonials-p2">JANE GALADRIEL</p>
-                <p class="testimonials-p3">CEO TENGKUREP</p>
+                <p class="testimonials_text2">JANE GALADRIEL</p>
+                <p class="testimonials_text3">CEO TENGKUREP</p>
             </div>
-            <div class="slide flex-wrap j-cont-center">
+            <div class="slider flex-wrap j-cont-center">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 
-                <a class="slide-item" href="#"><img
+                <a class="slider_item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile1.png"></a>
-                <a class="slide-item" href="#"><img
+                <a class="slider_item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile2.png"></a>
-                <a class="slide-item" href="#"><img
+                <a class="slider_item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile3.png"></a>
-                <a class="slide-item" href="#"><img
+                <a class="slider_item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile4.png"></a>
-                <a class="slide-item" href="#"><img
+                <a class="slider_item" href="#"><img
                         src="./Tajam-images/Profile-images/PUT YOUR IMAGE HEREprofile5.png"></a>
 
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -242,24 +250,27 @@
         </div>
     </section>
 
-    <section class="Contact-Section">
+    <section class="contact">
         <div class="container">
-            <div class="row flex">
-                <div class="column">
-                    <h2 style="color: #4e4c57; margin-bottom: 35px;">Give us a good news</h2>
-                    <form method="post" action="#">
+            <div class="contact_inner">
+                <div class="column_form">
+                    <h2 class="form_title">Give us a good news</h2>
+
+                    <form class="form" method="post" action="#">
                         <input type="text" placeholder="Name" name="firstname">
                         <input type="email" placeholder="Email" name="email">
                         <input type="text" placeholder="Subject" name="subject">
                         <textarea placeholder="Your Massage" name="massage"></textarea>
-                        <input type="Submit" value="Submit" class="btn-dark">
+                        <input type="Submit" value="Submit" class="btn btn-dark">
                     </form>
+
                 </div>
 
-                <div class="column">
-                    <h2 style="color: #4e4c57;">Our happy client</h2>
-                    <div class="brand-container flex">
-                        <div class="left mr-45px">
+                <div class="column_brand">
+                    <h1 class="brand_title">Our happy client</h1>
+                    <div class="brands">
+                        <div class="left_brands_col">
+
                             <div class="brand">
                                 <img src="./Tajam-images/Client-images/Left-side/Zara_Logo.svg.png">
                             </div>
@@ -279,7 +290,7 @@
                             </div>
                         </div>
 
-                        <div class="right">
+                        <div class="right_brands_col">
                             <div class="brand">
                                 <img src="./Tajam-images/Client-images/Right-side/Logo_of_Mango_(new).svg.png">
                             </div>
@@ -302,6 +313,7 @@
                         </div>
 
                     </div>
+
                 </div>
 
             </div>
@@ -309,44 +321,49 @@
     </section>
 
     <footer class="footer">
-        <div class="flex">
-            <div class="footer-item">
-                <img style="margin-bottom: 29px;" src="./Tajam-images/Logo/Logo.png">
-                <p>lorem quis bibendum auctor, nisi elit</p>
-                <p>consequat ipsum, nec sagittis sem nibh elit.</p>
-                <p>Duis sed odio sit amet auctor a orbare odio</p>
-                <p>non mauris vitae erat in elit</p>
-                <p style="margin-top: 32px;">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
-                    &nbsp; &nbsp;PRIVACY</p>
-            </div>
-
-            <div class="footer-item">
-                <h3>our studio</h3>
-
-                <p><img src="./Tajam-images/Social-media/big104.png">
-                    &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
-                <p>No.12-13, Kalideres - Jakarta Barat</p>
-                <p>11480 - Indonesia</p>
-
-                <p style="margin-top: 28px;"><img src="./Tajam-images/Social-media/phone351.png">
-                    &nbsp; &nbsp;(+62) 21-2224 3333</p>
-            </div>
-
-            <div class="footer-item">
-                <h3>stay in touch</h3>
-                <form class="footer-form">
-                    <input type="text" name="" placeholder="Subscribe our newsletter">
-                    <button type="submit"></button>
-                </form>
-                <div class="social-media">
-                    <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
-                    <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
-                    <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
-                    <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
-                    <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
-                    <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_item">
+                    <img class="footer_logo" src="./Tajam-images/Logo/Logo.png">
+                    <p>lorem quis bibendum auctor, nisi elit</p>
+                    <p>consequat ipsum, nec sagittis sem nibh elit.</p>
+                    <p>Duis sed odio sit amet auctor a orbare odio</p>
+                    <p>non mauris vitae erat in elit</p>
+                    <p class="help">HELP&nbsp; &nbsp; &nbsp; &nbsp;TERMS & CONDITION&nbsp; &nbsp;
+                        &nbsp; &nbsp;PRIVACY</p>
                 </div>
-                <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
+
+                <div class="footer_item">
+                    <h3>our studio</h3>
+
+                    <p><img src="./Tajam-images/Social-media/big104.png">
+                        &nbsp; &nbsp;Ruko cucruk, Jl. Radio luar dalem jos</p>
+                    <p>No.12-13, Kalideres - Jakarta Barat</p>
+                    <p>11480 - Indonesia</p>
+
+                    <p class="phone"><img src="./Tajam-images/Social-media/phone351.png">
+                        &nbsp; &nbsp;(+62) 21-2224 3333</p>
+                </div>
+
+                <div class="footer_item">
+                    <h3>stay in touch</h3>
+
+                    <form class="footer_form">
+                        <input type="text" name="" placeholder="Subscribe our newsletter">
+                        <input type="submit" value=""></input>
+                    </form>
+
+                    <div class="social_media">
+                        <a href="#"><img src="./Tajam-images/Social-media/facebook.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/twitter.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/dribbble.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/instagram.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/gplus.png"></a>
+                        <a href="#"><img src="./Tajam-images/Social-media/youtube.png"></a>
+                    </div>
+
+                    <p class="copyright">Copyright &copy 2015 - Tajam Creative</p>
+                </div>
             </div>
         </div>
     </footer>
