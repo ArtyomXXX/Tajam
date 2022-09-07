@@ -286,10 +286,10 @@ a {
    justify-content: center;
    flex-wrap: wrap;
    align-items: baseline;
+   gap: 15px;
 }
 
 .expertise_item {
-   margin-bottom: 15px;
    height: 205px;
    width: 268px;
 }
@@ -340,8 +340,14 @@ a {
    background-color: #676080;
 }
 
+.employee_cards {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
 .card {
-   margin: 10px;
    display: inline-block;
    position: relative;
 }
@@ -497,7 +503,6 @@ input[type=submit] {
 .brand {
     margin-bottom: 45px;
     position: relative;
-    flex: 1 1 0;
 }
 
 /*.....................Footer Section.....................*/
@@ -511,16 +516,20 @@ input[type=submit] {
    justify-content: space-around;
    flex-wrap: wrap;
    align-items: baseline;
+   gap: 40px;
 }
 
 .footer_item {
    position: relative;
-   margin: 6px 10px 0 10px;
-   width: 320px;
+   width: auto;
 }
 
 .footer_item>p {
    line-height: 1.8;
+}
+
+.active_line {
+   display: none;
 }
 
 .footer_item>h3, .footer_logo {
@@ -570,12 +579,12 @@ input[type=submit] {
 }
 
 .help, .copyright {
-   margin-top: 82px;
+   margin-top: 62px;
 }
 
 
 
-@media (max-width: 1230px){
+/* @media (max-width: 1230px){
    
 }
 
@@ -585,12 +594,12 @@ input[type=submit] {
 
 @media  (max-width: 912px) {
 
-}
+} */
 
 @media (max-width: 880px){
-   .header {
+   /* .header {
       background-color: #000;
-   }
+   } */
    .nav_link {
        display: none;
    }
@@ -615,9 +624,9 @@ input[type=submit] {
    }
 }
 
-@media  (max-width: 768px) {
+/* @media  (max-width: 768px) {
 
-}
+} */
 
 @media  (max-width: 728px) {
    .about_logo {
@@ -632,8 +641,10 @@ input[type=submit] {
    } 
 }
 
-@media  (max-width: 540px) {
-
+@media  (max-width: 567px) {
+   .active_line {
+      display: block;
+   }
 }
 
 @media  (max-width: 412px) {
@@ -642,7 +653,7 @@ input[type=submit] {
    }
 
    .home_text {
-      font-size: 8px;
+
    }
 
    .about_logo {
@@ -660,11 +671,15 @@ input[type=submit] {
    .testimonials_text1 {
       font-size: 9px;
    }
+
+   .active_line {
+      display: block;
+   }
 }
 
-@media (max-width: 321px) {
+/* @media (max-width: 321px) {
 
-}
+} */
 
 @media (max-width: 280px) {
    .header_logo {
@@ -672,13 +687,29 @@ input[type=submit] {
     }
 
     .home_title {
-      font-size: 
+      font-size: 23px;
+    }
+
+    .home_text {
+      font-size: 11px;
+    }
+
+    .btn {
+      font-size: 12px;
     }
 
    .form_title, .brand_title {
       font-size: 14px;
       margin-bottom: 40px
    }
+
+   .about_text {
+      font-size: 11px;
+    }
+
+    .testimonials_text1 {
+      font-size: 11px;
+    }
 
    .brand {
       margin-bottom: 38px;
