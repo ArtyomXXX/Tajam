@@ -1,7 +1,7 @@
 body {
    margin: 0;
    color: #fff;
-   font-size: 16px;
+   font-size: 15px;
 }
 
 h1,
@@ -10,12 +10,20 @@ h3,
 h4,
 h5,
 h6,
-p  {
+p {
    margin: 0;
+   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, nav, .btn {
-  text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+.btn {
+   text-transform: uppercase;
 }
 
 a {
@@ -25,9 +33,13 @@ a {
 *,
 *::before,
 *::after {
-   box-sizing: border-box;
    -webkit-box-sizing: border-box;
    -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.page {
+   overflow: hidden;
 }
 
 .container {
@@ -42,8 +54,8 @@ a {
 }
 
 /*....................Button....................*/
-.btn,
-.btn-dark {
+.btn-dark,
+.btn {
    display: inline-block;
    vertical-align: top;
    padding: 12px 18px;
@@ -53,12 +65,15 @@ a {
    border: 1px solid #00ffff;
    transition: color .1s linear;
    cursor: pointer;
+   -webkit-user-select: none;
    user-select: none;
 }
+
 .btn:hover {
    color: #fff;
    border: 1px solid #fff;
 }
+
 .btn-dark:hover {
    color: #322d4c;
    border-color: #322d4c;
@@ -82,7 +97,7 @@ a {
    align-items: center;
 }
 
-.menu, .nav_link {
+.nav_link {
    display: inline-block;
    position: relative;
    margin: 0 14px;
@@ -92,54 +107,57 @@ a {
    transition: color .1s linear;
 }
 
-.active,.nav_link:hover {
+.active,
+.nav_link:hover {
    color: #00FFFF;
 }
 
 .menu {
    display: none;
-   font-size: 30px;
 }
 
 /*..................Home Section.................*/
-.home {
+.main_section {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh;
    width: 100%;
+   height: 100vh;
    background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREheader.png") no-repeat center / cover;
+   position: relative;
 }
 
-.home_inner {
-   margin: 185px auto 53px;
-   width: 100%;
+.main_content {
+   margin: 180px auto 50px;
    max-width: 880px;
 }
 
-.home_title {
+.main_title {
    font-size: 42px;
    font-weight: 700;
    text-transform: none;
 }
 
-.home_title:after {
+.section_suptitle:after,
+.main_title:after {
    content: "";
    display: block;
-   height: 3px;
-   width: 52px;
+   height: 2px;
+   width: 60px;
    background-color: #00ffff;
-   margin: 26px auto 29px;
+   margin: 26px auto 30px;
 }
 
-.home_text {
+.main_text {
    line-height: 1.8;
+   max-width: 680px;
+   margin: 0 auto;
 }
 
 /*...................Radio.....................*/
 .radio_container {
-    margin: 127px 0 70px;
+   margin: 127px 0 70px;
 }
 
 .radio_inner {
@@ -210,161 +228,146 @@ a {
    opacity: 1;
 }
 
-/*.....................About Section...................*/
-.about {
+/*.....................Section...................*/
+.section {
    padding: 70px 0;
 }
 
-.about_inner {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-}
-
-.about_logo {
-   height: 233px;
-   width: 235px;
-   margin: 20px 100px 20px 20px;
-}
-
-.about_title {
-   color: #423f4c;
-   font-size: 22px;
-   margin-bottom: 28px;
-}
-
-.about_text {
-   color: #aaa8ae;
-   line-height: 1.8;
-   margin-bottom: 34px;
-}
-
-/*..............Video.....................*/
-.video-about {
-   height: 550px; 
+.section_header {
    width: 100%;
-   background: #322d4c url(./Tajam-images/Main-images/Video.png) no-repeat center / cover;
+   max-width: 950px;
+   margin: 0 auto 50px;
 }
 
-/*..............Expertise Section.....................*/
-.expertise {
-   height: 100%;
-   width: 100%;
-   padding: 71px 0 104px;
-}
-
-.expertise_header {
-   margin-bottom: 80px;
-}
-
-.expertise_title {
+.section_title {
    color: #423f4c;
    font-size: 22px;
    letter-spacing: 1px;
    margin-bottom: 16px;
 }
 
-.expertise_suptitle {
+.section_suptitle {
    color: #7a797d;
-   font-weight: 200;
+   font-weight: 300;
    letter-spacing: 1px;
-    text-transform: none;
+   text-transform: none;
 }
 
-.expertise_suptitle:after {
-   margin: 21px auto 0;
-   content: "";
-   display: block;
-   height: 2px;
-   width: 60px;
+.section_suptitle:after {
    background-color: #c6c5c9;
+   margin: 20px auto 0;
 }
 
-.expertise_blocks {
+.section--team {
+   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE.png) no-repeat center / cover;
+}
+
+.section--team_title {
+   color: #fff;
+}
+
+.section--team_suptitle {
+   color: #c6c5cf;
+}
+
+.section--team_suptitle:after {
+   background-color: #676080;
+}
+
+.section--testimonials {
+   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png) no-repeat center center / cover;
+}
+
+.section--footer {
+   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE\ footer.png") no-repeat center / cover;
+}
+
+/*.....................About Section...................*/
+.about {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
+   margin: 0 auto;
+   max-width: 900px;
+}
+
+.about_logo {
+   width: 270px;
+   height: 260px;
+}
+
+.about_title {
+   color: #423f4c;
+   font-size: 22px;
+   margin-bottom: 20px;
+}
+
+.about_text {
+   color: #aaa8ae;
+   line-height: 1.8;
+   max-width: 500px;
+   margin-bottom: 20px;
+}
+
+/*..............Video.....................*/
+.video-about {
+   height: 550px;
+   width: 100%;
+   background: #322d4c url(./Tajam-images/Main-images/Video.png) no-repeat center / cover;
+}
+
+/*..............Expertise Section.....................*/
+.expertise {
+   display: flex;
    flex-wrap: wrap;
    align-items: baseline;
-   gap: 15px;
 }
 
 .expertise_item {
-   height: 205px;
-   width: 268px;
+   width: 33.33333%;
+   padding: 0 20px 40px 20px;
+   margin-bottom: 40px;
 }
 
-.expertise_item>img {
-   margin-bottom: 37px;
+.expertise_item--border {
+   border-bottom: 1px solid #e5e5e5;
 }
 
-.expertise_text1 {
-   margin-bottom: 19px;
+.expertise_item img {
+   margin-bottom: 25px;
+}
+
+.expertise_header {
+   margin-bottom: 15px;
    color: #423f4b;
    font-weight: 600;
 }
 
-.expertise_text2 {
+.expertise_text {
    color: #a4a4a4;
-   line-height: 1.8;
-}
-
-.line {
-   margin: 39px 0;
-   width: 100%;
-   border-bottom: 1px solid #ebebeb;
+   line-height: 1.4;
 }
 
 /*.....................Team Section.....................*/
 .team {
-   padding: 71px 0 69px;
-   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE.png) no-repeat center / cover;
-}
-
-.team_title {
-   font-size: 22px;
-   margin-bottom: 15px;
-}
-
-.team_suptitle {
-   color: #aeabbb;
-   text-transform: none;
-}
-
-.team_suptitle:after {
-   content: "";
-   display: block;
-   margin: 21px auto 47px;
-   height: 2px;
-   width: 60px;
-   background-color: #676080;
-}
-
-.employee_cards {
    display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 20px;
+   justify-content: space-between;
 }
 
-.card {
-   display: inline-block;
-   position: relative;
-}
-
-.avatar {
+.employee_photo {
    display: block;
-   height: 229px;
+   height: 230px;
    width: 220px;
+   border: 1px solid #7a7a8c;
+   background-color: #ffffff;
 }
 
-.card_texts {
-   margin: 0 auto;
-   padding: 14px;
+.employee_info {
+   padding: 15px;
    line-height: 1.8;
    border: 1px solid #7a7a8c;
 }
 
-.card_text2 {
+.employee_position {
    font-size: 13px;
    color: #b4b2c0;
 }
@@ -375,172 +378,208 @@ a {
 }
 
 /*.....................Our works Section.....................*/
-.OurWorks {
-   padding: 70px 0;
+.our_works_header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.OurWorks_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-.OurWorks_title {
+.our_works_title {
    color: #413f4b;
    font-size: 22px;
 }
 
-.OurWorks_link {
+.our_works_link {
    color: #423f4c;
-}
-
-.OurWorks_gallery {
-   margin: 70px 0;
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-}
-
-.gallery_item {
-   display: block;
-   height: 200px;
-   width: 267px;
    position: relative;
 }
 
-/*.....................Testimonials Section.....................*/
-.testimonials {
-   padding: 69px 0;
-   height: 100%;
+.our_works_link span {
+   font-size: 0;
+   color: transparent;
+   position: absolute;
+   top: 4px;
+   z-index: 0;
+}
+
+.our_works_link span::after {
+   content: "";
+   display: block;
+   width: 10px;
+   height: 10px;
+   border-top: 2px solid #423f4c;
+   border-left: 2px solid #423f4c;
+   transform: rotate(135deg);
+}
+
+.our_works_link:hover {
+   text-decoration: underline;
+}
+
+.our_works {
+   margin: 70px 0;
+   display: flex;
+   justify-content: center;
+}
+
+.our_works_item {
    width: 100%;
-   background: #322d4c url(./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HEREwork.png) no-repeat center center / cover;
+   height: auto;
+   margin-bottom: -4px;
 }
 
-.testimonials_texts {
-   margin: 44px 0 45px;
+/*.....................Testimonials Section.....................*/
+.testimonials_content {
+   margin: 45px auto 45px;
+   max-width: 950px;
 }
 
-.testimonials_text1 {
+.testimonials_text {
    line-height: 1.8;
    font-size: 18px;
    color: #c0bec9;
 }
 
-.testimonials_text2 {
+.testimonials_name {
    margin: 55px 0 13px;
 }
 
-.testimonials_text3 {
-   font-size: 15px;
+.testimonials_job_title {
    color: #c0bec9;
 }
 
-.slider_item {
-   margin: 0 14px;
+.slider {
+   position: relative;
+   max-width: 400px;
+   margin: 0 auto;
 }
 
-.prev, .next {
-   width: 37px;
-   font-size: 25px;
-   font-weight: 100;
+.slider_photo {
+   padding: 0 8px;
+   position: relative;
+   vertical-align: middle;
+}
+
+.slider_btn {
+   font-size: 0;
+   color: transparent;
+   position: absolute;
+   top: 40%;
+   z-index: 1;
+   transform: translateY(-50%);
+}
+
+.slider_btn::after {
+   content: "";
+   display: block;
+   width: 16px;
+   height: 16px;
+   border-top: 2px solid #87868d;
+   border-left: 2px solid #87868d;
+}
+
+.slider_btn--prev {
+   left: 0;
+   transform: rotate(-45deg);
+}
+
+.slider_btn--next {
+   right: 0;
+   transform: rotate(135deg);
 }
 
 /*.....................Contact Section.....................*/
 .contact {
-   padding: 71px 0;
+   display: flex;
 }
 
-.contact_inner {
-     display: flex;
-     justify-content: center;
+.contact_item {
+   width: 50%;
+   padding: 0 30px;
 }
 
-.column_form, .column_brand {
-   float: left;
-   width: 100%;
-   margin: 6px 10px 0 10px;
-   padding: 30px; 
-} 
-
-.form_title, .brand_title {
+.contact_title {
    margin-bottom: 45px;
-   color: #4e4c57; 
+   color: #4e4c57;
    font-size: 22px;
 }
 
 input[type=text],
 [type=email],
 textarea {
-   margin-bottom: 21px;
+   margin-bottom: 20px;
    padding: 16px;
    width: 100%;
    border: 1px solid #e5e5e5;
    outline-color: #00ffff;
 }
+
 textarea {
-   height: 199px;
+   height: 200px;
    resize: none;
 }
-input::placeholder, textarea::placeholder {
+
+input::placeholder,
+textarea::placeholder {
    color: #b9b8bd;
 }
+
 input[type=submit] {
+   width: 120px;
    background: transparent;
 }
 
 .brands {
-     display: flex;
+   display: flex;
+   justify-content: space-between;
+   max-width: 400px;
 }
 
-.left_brands_col {
-   margin-right: 80px;
-}
-
-.brand {
-    margin-bottom: 45px;
-    position: relative;
+.brands_col img {
+   display: block;
+   margin-bottom: 45px;
 }
 
 /*.....................Footer Section.....................*/
 .footer {
-   padding: 90px 0 72px;
-   background: #322d4c url("./Tajam-images/Main-images/PUT\ YOUR\ BACKGROUND\ HERE\ footer.png") no-repeat center / cover;
-}
-
-.footer_inner {
    display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   align-items: baseline;
-   gap: 40px;
+   justify-content: space-between;
 }
 
-.footer_item {
-   position: relative;
-   width: auto;
+.footer_col {
+   width: 33.33333%;
 }
 
-.footer_item>p {
+.footer_text {
    line-height: 1.8;
 }
 
-.active_line {
-   display: none;
+.footer_col--first {
+   max-width: 325px;
 }
 
-.footer_item>h3, .footer_logo {
-   margin-bottom: 39px;
-   font-size: 15;
+.footer_col--second {
+   max-width: 250px;
+}
+
+.footer_col--third {
+   max-width: 300px;
+}
+
+.terms {
+   margin-top: 80px;
+}
+
+.footer_title,
+.footer_logo {
+   margin-bottom: 40px;
 }
 
 .footer_form {
    display: flex;
 }
 
-.footer_form>input[type=text] {
+.footer_form input[type=text] {
    height: 43px;
    width: 209px;
    color: #b1aebf;
@@ -548,182 +587,244 @@ input[type=submit] {
    background: transparent;
 }
 
-.footer_form>input::placeholder {
+.footer_form input::placeholder {
    color: #b1aebf;
 }
 
-.footer_form>input[type=submit] {
+.subscribe_btn {
    margin-left: 10px;
    height: 43px;
    width: 70px;
-  
-   background: url(./Tajam-images/Social-media/Btn.png) no-repeat center / cover;
+   font-size: 20px;
+   border: none;
+   background-color: #c0bec9;
+   opacity: .6;
+   cursor: pointer;
 }
 
-.social_media>a {
+.social_media-icon {
+   display: inline-block;
    margin: 0 3px;
+   padding: 6px;
+   font-size: 18px;
+   color: #ffffff;
+   border: 1px solid #ffffff;
+   border-radius: 100%;
 }
 
-:is(.social_media, a)>img:hover {
-   border-radius: 100px;
-   background-color: #b1aebf;
+.social_media-icon:hover {
+   color: #00ffff;
+   border-color: #00ffff;
+}
+
+.icon--fix_size {
+   padding: 6px 10px;
+}
+
+.icon--fix_size_4 {
+   padding: 6px 8px;
+}
+
+.icon--fix_size_5 {
+   padding: 6px 5px;
 }
 
 .copyright {
+   margin-top: 60px;
    text-align: right;
 }
 
-.phone {
-   margin-top: 24px;
+.phone_number {
+   margin-top: 27px;
 }
 
-.help, .copyright {
-   margin-top: 62px;
-}
+/*.....................Media.....................*/
+@media screen and (max-width: 1230px) {}
 
+@media screen and (max-width: 990px) {
 
-
-/* @media (max-width: 1230px){
-   
-}
-
-@media (max-width: 1024px) {
-   
-}
-
-@media  (max-width: 912px) {
-
-} */
-
-@media (max-width: 880px){
-   /* .header {
-      background-color: #000;
-   } */
-   .nav_link {
-       display: none;
+   /* ....Team.... */
+   .team {
+      flex-wrap: wrap;
+      max-width: 500px;
+      margin: 0 auto;
    }
+
+   .team_item {
+      margin-bottom: 30px;
+   }
+
+   /* ....footer.... */
+   .footer {
+      flex-direction: column;
+   }
+
+   .footer_col {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #00ffff;
+   }
+
+   .footer_col--first .footer_text {
+      max-width: 500px;
+   }
+
+   .footer_col--second .footer_text {
+      max-width: 250px;
+   }
+
+   .footer_col:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
+   }
+}
+
+@media screen and (max-width: 900px) {
+
+   .nav_link {
+      display: none;
+   }
+
    .menu {
       display: block;
+      font-size: 30px;
    }
+}
+
+@media screen and (max-width: 860px) {
+
+   .about {
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .about_logo,
+   .about_content {
+      margin: 0 auto;
+   }
+
    .about_logo {
-      margin: auto;
+      margin-bottom: 30px;
    }
 
-   .contact_inner {
+   .contact {
+      display: block;
+   }
+
+   .contact_item {
+      width: 100%;
+      margin-bottom: 40px;
+   }
+
+   .contact_item:last-child {
+      margin-bottom: 0;
+   }
+}
+
+@media screen and (max-width: 770px) {
+
+   .main_title {
+      font-size: 32px;
+   }
+
+   /* ....Expertise.... */
+   .expertise_item {
+      width: 50%;
+      padding-bottom: 0;
+   }
+
+   .expertise_item--border {
+      border-bottom: 0;
+   }
+}
+
+@media screen and (max-width: 575px) {
+
+   .main_title {
+      font-size: 22px;
+   }
+
+   .section {
+      padding: 50px 0;
+   }
+
+   .section_title {
+      font-size: 19px;
+   }
+
+   /* ....Expertise.... */
+   .expertise {
+      justify-content: center;
+   }
+
+   .expertise_item {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   .our_works_header {
+      display: block;
+   }
+
+   .our_works_title {
+      margin-bottom: 10px;
+   }
+
+   .our_works {
       flex-wrap: wrap;
+      margin: 40px 0;
    }
 
-   .column_brand {
+   .our_works_col {
       width: 50%;
    }
 
-   .brand > img {
-      height: auto;
-      width: 100%;
+   .brands_col img {
+      margin: 0 auto 40px;
+   }
+
+   .contact_title {
+      font-size: 20px;
    }
 }
 
-/* @media  (max-width: 768px) {
+@media screen and (max-width: 500px) {
 
-} */
+   /* ....Team.... */
+   .team {
+      justify-content: center;
+      max-width: 400px;
+   }
 
-@media  (max-width: 728px) {
-   .about_logo {
-      height: 192px;
-      width: 192px;
-   } 
+   .team_item:last-child {
+      margin-bottom: 0;
+   }
 }
 
-@media  (max-width: 685px) {
-   .about_logo {
-      margin-bottom: 30px;
-   } 
-}
+@media screen and (max-width: 440px) {
 
-@media  (max-width: 567px) {
-   .active_line {
+   .about_logo {
+      width: 60%;
+      height: 60%;
+   }
+
+   .slider {
+      max-width: 200px;
+   }
+
+   .slider_photo {
+      display: none;
+   }
+
+   .slider_photo--active {
+      display: block;
+      margin: 0 auto;
+   }
+
+   .brands {
       display: block;
    }
 }
-
-@media  (max-width: 412px) {
-   .home_title {
-      font-size: 23px;
-   }
-
-   .home_text {
-
-   }
-
-   .about_logo {
-       height: 192px;
-       width: 192px;
-   }
-   .expertise_header {
-      padding: 20px;
-   }
-
-   .OurWorks_header {
-      padding: 0 20px;
-   }
-
-   .testimonials_text1 {
-      font-size: 9px;
-   }
-
-   .active_line {
-      display: block;
-   }
-}
-
-/* @media (max-width: 321px) {
-
-} */
-
-@media (max-width: 280px) {
-   .header_logo {
-      width: 90px;
-    }
-
-    .home_title {
-      font-size: 23px;
-    }
-
-    .home_text {
-      font-size: 11px;
-    }
-
-    .btn {
-      font-size: 12px;
-    }
-
-   .form_title, .brand_title {
-      font-size: 14px;
-      margin-bottom: 40px
-   }
-
-   .about_text {
-      font-size: 11px;
-    }
-
-    .testimonials_text1 {
-      font-size: 11px;
-    }
-
-   .brand {
-      margin-bottom: 38px;
-  }
- 
-   .left_brands_col {
-      margin-right: 45px;
-   }
-}
-
-
-@media screen and (max-width: 600px) {
-   .column_form, .column_brand{
-       width: 100%;
-       margin: 0;
-   }
-  
-} 
