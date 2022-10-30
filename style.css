@@ -101,6 +101,15 @@ a {
 
 .menu {
    display: none;
+   letter-spacing: 5px;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.phone_menu {
+   display: none;
+   font-size: 30px;
+   cursor: pointer;
 }
 
 /*..................Home Section.................*/
@@ -120,7 +129,7 @@ a {
 }
 
 .main_title {
-   font-size: 42px;
+   font-size: 50px;
    font-weight: 700;
    text-transform: none;
 }
@@ -626,7 +635,11 @@ input[type=submit] {
 }
 
 /*.....................Media.....................*/
-@media screen and (max-width: 1230px) {}
+@media screen and (max-width: 1230px) {
+   .main_title {
+      font-size: 42px;
+   }
+}
 
 @media screen and (max-width: 990px) {
 
@@ -677,7 +690,6 @@ input[type=submit] {
 
    .menu {
       display: block;
-      font-size: 30px;
    }
 }
 
@@ -732,6 +744,16 @@ input[type=submit] {
 
 @media screen and (max-width: 575px) {
 
+   /* ....Menu.... */
+   .menu {
+      display: none;
+   }
+
+   .phone_menu {
+      display: block;
+   }
+
+   /* ....Main.... */
    .main_title {
       font-size: 20px;
    }
@@ -746,6 +768,10 @@ input[type=submit] {
 
    .radio_container {
       margin-top: 40px;
+   }
+
+   .about_btn {
+      text-align: center;
    }
 
    /* ....Section.... */
@@ -791,6 +817,10 @@ input[type=submit] {
 
    .contact_title {
       font-size: 20px;
+   }
+
+   .copyright {
+      text-align: center;
    }
 }
 
@@ -881,12 +911,13 @@ input[type=submit] {
    }
 
    .radio_container {
-      margin-top: 20px;
+      margin-top: 10px;
    }
 }
 
 @media screen and (max-height: 280px) {
 
+   /* ....Header.... */
    .header {
       padding-top: 10px;
    }
@@ -895,7 +926,11 @@ input[type=submit] {
       width: 100px;
    }
 
-   
+   .menu {
+      font-size: 15px;
+   }
+
+/* ....Main.... */
    .main_content {
       margin: 50px auto 10px;
    }
@@ -911,9 +946,4 @@ input[type=submit] {
    .main_text {
       padding: 0 10px;
    }
-
-   .radio_container {
-      margin-top: 5px;
-   }
-
 }
